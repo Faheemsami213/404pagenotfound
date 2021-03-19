@@ -1,0 +1,129 @@
+/* //.container .img-sec .content .heading .content-para .btn */
+
+body{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior:smooth;
+}
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKqScQ7Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+*,
+::after,
+::before{
+    box-sizing:border-box;
+}
+.container{
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns:45% 55%;
+    grid-auto-rows:80% 100%;
+}
+
+.container:first-child{
+  font-size:15px;
+  font-family:sans-serif;
+  font-weight:500;
+  }
+.page404{
+    width: 100px;
+    height: 5px;
+    font-size:22px;
+    font-family:system ui;
+    font-weight:600;
+}
+.img-sec {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:0 10%;
+}
+.img-sec p{
+  font-family:sans-serif;
+  font-size:19px;
+  font-weight:bold;
+}
+.img-sec img{
+    width:100%;
+    height:80%;
+
+}
+.content {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    padding:5%;
+}
+.heading h1 {
+    font-size: 45px;
+    font-family: 'Arvo';
+    line-height:20px;
+    word-spacing:8px;
+ }
+  .content-para p{
+      font-weight: 400;
+      font-size: 21px;
+      font-family:system-ui;
+      width: 61%;
+      line-height: 26px;
+  }
+  .btn {
+    margin-top: 2%;
+}
+  button{
+      background:black;
+      border:none;
+      height:240%;
+  }
+  button a{
+      text-decoration:none;
+      color:white;
+      font-family:monospace;
+      font-size:15px;
+      font-weight:700;
+      
+}
+ @media screen and (max-width:500px){
+        .container{
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+          padding:0 2%;
+        }
+         .img-sec{
+          padding:0;
+
+        }
+         .img-sec p{
+           font-size:18px;
+           margin-top:0;
+           margin-bottom:9%;
+           font-weight:bold;
+         }
+        .content{
+          padding:0 8%;
+        }
+        .content-para p {
+          width:90%;
+          font-size:18px;
+
+        }
+       
+        .btn{
+            margin-top:5%;
+        }
+        .heading h1{
+          font-size:37px;
+        }
+ }
